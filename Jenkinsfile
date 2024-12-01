@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        docker { image 'jenkins/ssh-agent:jdk17' }
-    }
+    agent any
     stages {
         stage('Test') {
             steps {
