@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SonarTest') {
             steps {
-                sh 'Hello World'
+                sh 'echo "Hello World"'
             }
         }
     }
