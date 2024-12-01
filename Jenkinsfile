@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Test') {
+        stage('SonarTest') {
             steps {
-                sh 'node --eval "console.log(process.platform,process.env.CI)"'
+                sh 'Hello World'
             }
         }
     }
