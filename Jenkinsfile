@@ -4,8 +4,8 @@ pipeline {
         stage('SonarTest') {
             steps {
                 sh '''#!/bin/bash
-                /usr/bin/whoami;
-                /usr/bin/docker run --rm -e SONAR_HOST_URL='http://192.168.4.7:9000' -e SONAR_TOKEN='sqp_3349de83b434e27196a88b9e646d37594bc72323' -v $(pwd):/usr/src sonarsource/sonar-scanner-cli
+                pwd
+                sonar-scanner -Dsonar.host.url=http://192.168.4.7:9000 -Dsonar.token=sqp_3349de83b434e27196a88b9e646d37594bc72323
             '''
             }
         }
