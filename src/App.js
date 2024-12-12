@@ -7,13 +7,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Know your command <code>npm install</code> 
+          Know your command <code>npm install</code>
         </p>
           Learn React
-        </a>
       </header>
     </div>
   );
 }
-
-export default App;
