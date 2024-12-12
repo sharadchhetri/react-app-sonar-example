@@ -1,16 +1,10 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Know your command <code>npm install</code>
-        </p>
-          Learn React
-      </header>
-    </div>
-  );
+	return (
+		<h1> This is Hotfix v1.0 -try that </h1>
+	);
 }
+
+export default App;
